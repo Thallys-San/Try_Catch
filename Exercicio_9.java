@@ -1,6 +1,12 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+class TemperaturaInvalidaException extends Exception {
+    public TemperaturaInvalidaException(String mensagem) {
+        super(mensagem);
+    }
+}
+
 public class Exercicio_9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

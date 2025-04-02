@@ -1,6 +1,21 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
+
+// Exceção personalizada para número negativo
+class NumeroNegativoException extends Exception {
+    public NumeroNegativoException(String mensagem) {
+        super(mensagem);
+    }
+}
+
+// Exceção personalizada para limite de fatorial excedido
+class LimiteFatorialExcedidoException extends Exception {
+    public LimiteFatorialExcedidoException(String mensagem) {
+        super(mensagem);
+    }
+}
 public class Exercicio_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

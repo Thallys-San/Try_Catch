@@ -1,6 +1,10 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+class IdadeInvalidaException extends Exception {
+    public IdadeInvalidaException(String mensagem) {
+        super(mensagem);
+    }
+}
 public class Exercicio_8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
